@@ -42,14 +42,8 @@ public class QrCodeReaderTests(ITestOutputHelper testOutputHelper)
 
         var data = _qrCodeReader.ReadQrCodeInPdfFromFile(sourcePath);
         
-        File.WriteAllText("compress.gz", data);
-        
         testOutputHelper.WriteLine(data);
         Assert.NotEmpty(data);
         Assert.Equal("http://commons.wikimedia.org/wiki/Commons:Mobile_app/Download/Mobile", data);
     }
-    
-    
-
-    
 }

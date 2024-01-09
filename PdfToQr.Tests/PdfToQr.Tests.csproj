@@ -39,6 +39,14 @@
       <Content Include="TestData\test.jpg">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
+      <None Remove="TestData\AdobeCompressed.pdf" />
+      <Content Include="TestData\AdobeCompressed.pdf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <None Remove="TestData\PdfExchangeCompressed.pdf" />
+      <Content Include="TestData\PdfExchangeCompressed.pdf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
